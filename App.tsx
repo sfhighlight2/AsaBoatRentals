@@ -41,7 +41,7 @@ const App: React.FC = () => {
               <i className="fa-solid fa-phone"></i>
               786-366-9200
             </a>
-            <a href="#trailers" className="bg-blue-600 hover:bg-blue-700 text-white font-black px-6 py-2.5 rounded-full shadow-lg transition transform hover:scale-105">
+            <a href="#trailers" className="whitespace-nowrap bg-blue-600 hover:bg-blue-700 text-white font-black px-6 py-2.5 rounded-full shadow-lg transition transform hover:scale-105">
               Reserve Now
             </a>
           </div>
