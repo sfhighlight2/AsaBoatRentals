@@ -51,8 +51,8 @@ const App: React.FC = () => {
       {/* Hero Section */}
       <section className="relative min-h-[95vh] flex items-center pt-24 pb-16 overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img 
-            src="https://images.unsplash.com/photo-1621235123018-8424075b28e5?auto=format&fit=crop&q=1200&w=2000" 
+          <img
+            src="/assets/ui/hero.png"
             alt="Premium Boat Trailer Rentals South Florida"
             className="w-full h-full object-cover"
           />
@@ -85,7 +85,7 @@ const App: React.FC = () => {
                   Reserve Now
                 </a>
               </div>
-              
+
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10">
                 {[
                   { icon: 'fa-shield-halved', text: '$2M Liability Coverage' },
@@ -99,11 +99,11 @@ const App: React.FC = () => {
                   </div>
                 ))}
               </div>
-              
+
               <div className="flex flex-wrap gap-8 items-center border-t border-white/10 pt-8">
                 <div className="flex flex-col">
                   <div className="flex text-yellow-400 text-lg mb-1">
-                    {[1,2,3,4,5].map(i => <i key={i} className="fa-solid fa-star"></i>)}
+                    {[1, 2, 3, 4, 5].map(i => <i key={i} className="fa-solid fa-star"></i>)}
                   </div>
                   <span className="text-xs font-bold opacity-70 uppercase tracking-widest">500+ Local Reviews</span>
                 </div>
@@ -141,7 +141,7 @@ const App: React.FC = () => {
               <p className="text-slate-600 text-lg mb-10 leading-relaxed font-medium">
                 ASA is South Florida's only dedicated boat trailer rental company — not a side hustle, not a guy with a trailer in his driveway. Don't gamble your $100K boat on a $50 Craigslist trailer.
               </p>
-              
+
               <div className="overflow-hidden rounded-3xl border-2 border-slate-100">
                 <table className="w-full text-left">
                   <thead className="bg-slate-50">
@@ -173,12 +173,12 @@ const App: React.FC = () => {
                 Verified business: Florida LLC • D-U-N-S #43849811 • Best of Florida Nominee
               </p>
             </div>
-            
+
             <div className="relative">
               <div className="bg-slate-100 p-4 rounded-[40px] rotate-2">
-                <img 
-                  src="https://images.unsplash.com/photo-1695666752003-7b3b448f863d?auto=format&fit=crop&q=80&w=800" 
-                  alt="Quality Boat Trailer Hardware" 
+                <img
+                  src="/assets/ui/hardware.png"
+                  alt="Quality Boat Trailer Hardware"
                   className="rounded-[32px] w-full aspect-square object-cover -rotate-2 hover:rotate-0 transition duration-500 shadow-2xl"
                 />
                 <div className="absolute -bottom-8 -right-8 bg-blue-600 text-white p-8 rounded-3xl shadow-2xl max-w-[240px]">
@@ -236,7 +236,7 @@ const App: React.FC = () => {
                       </li>
                     ))}
                   </ul>
-                  
+
                   <a href="#lead-form" className="w-full py-5 bg-blue-600 text-white font-black rounded-2xl transition-all duration-300 hover:bg-blue-700 shadow-xl shadow-blue-100 uppercase tracking-wider text-center">
                     Reserve This Trailer
                   </a>
@@ -254,7 +254,7 @@ const App: React.FC = () => {
             <h2 className="text-4xl md:text-5xl font-black mb-4 uppercase">6 Locations Across South Florida</h2>
             <p className="text-slate-500 font-bold uppercase tracking-widest text-sm">Always close to the ramp — wherever you are.</p>
           </div>
-          
+
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
             {LOCATIONS_DETAILS.map((loc, i) => (
               <div key={i} className="bg-slate-50 p-6 rounded-2xl border border-slate-100 text-center hover:border-blue-400 hover:bg-white transition-all group">
@@ -286,7 +286,7 @@ const App: React.FC = () => {
             <div className="flex flex-col items-center bg-white/10 backdrop-blur-md p-8 rounded-3xl border border-white/10 min-w-[320px]">
               <div className="text-5xl font-black text-white mb-2">4.9/5</div>
               <div className="flex text-yellow-400 gap-1 mb-4">
-                {[1,2,3,4,5].map(i => <i key={i} className="fa-solid fa-star"></i>)}
+                {[1, 2, 3, 4, 5].map(i => <i key={i} className="fa-solid fa-star"></i>)}
               </div>
               <div className="text-xs font-bold uppercase tracking-widest text-blue-300">Average Google Rating</div>
             </div>
@@ -307,7 +307,7 @@ const App: React.FC = () => {
                 </div>
                 <p className="text-blue-50/80 text-xl leading-relaxed mb-10 flex-grow font-medium">"{review.text}"</p>
                 <div className="flex gap-1">
-                   {[...Array(5)].map((_, i) => <i key={i} className="fa-solid fa-star text-yellow-400 text-sm"></i>)}
+                  {[...Array(5)].map((_, i) => <i key={i} className="fa-solid fa-star text-yellow-400 text-sm"></i>)}
                 </div>
               </div>
             ))}
@@ -337,7 +337,7 @@ const App: React.FC = () => {
                 ))}
               </div>
             </div>
-            
+
             <div>
               <h5 className="font-black mb-10 uppercase tracking-widest text-blue-400 text-sm">The Fleet</h5>
               <ul className="space-y-4 text-slate-500 font-black text-[10px] uppercase tracking-[0.2em]">
@@ -366,7 +366,7 @@ const App: React.FC = () => {
               </a>
             </div>
           </div>
-          
+
           <div className="pt-12 border-t border-slate-900 flex flex-col md:flex-row justify-between items-center gap-6 text-[10px] text-slate-600 font-black uppercase tracking-[0.3em]">
             <p>© 2024 ASA Boat Trailer Rental. D-U-N-S #43849811. All equipment is 2026 spec.</p>
             <div className="flex gap-10">
