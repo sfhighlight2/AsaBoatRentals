@@ -1,0 +1,7 @@
+{
+  "name": "ASA Boat Trailer Rental Redesign",
+  "description": "A high-converting, modern landing page for boat trailer rentals in Fort Lauderdale, featuring lead generation forms, service showcases, and trust signals.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
