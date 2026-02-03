@@ -65,7 +65,8 @@ const App: React.FC = () => {
             <div className="text-white max-w-2xl">
               <div className="inline-flex items-center gap-2 bg-blue-600/30 backdrop-blur-md px-3 py-1 rounded-full border border-blue-400/30 text-blue-100 text-sm font-bold uppercase tracking-wider mb-6">
                 <i className="fa-solid fa-star text-xs text-yellow-400"></i>
-                South Florida's Only Professional Trailer Fleet
+                <span className="hidden sm:inline">South Florida's Only Professional Trailer Fleet</span>
+                <span className="inline sm:hidden">South Florida Boat Trailer Rentals</span>
               </div>
               <h1 className="text-5xl md:text-7xl font-extrabold mb-6 leading-tight uppercase tracking-tight">
                 Boat Trailer Rentals — <span className="text-blue-400">Available</span> Today
