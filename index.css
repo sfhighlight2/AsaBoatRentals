@@ -14,12 +14,24 @@
 
 /* iOS Date Picker Fix */
 input[type="date"] {
-  min-height: 2.5em;
-  /* Ensure enough height for the picker icon */
-  -webkit-appearance: none;
-  appearance: none;
+  -webkit-appearance: none !important;
+  appearance: none !important;
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+  /* slate-900 */
+  min-height: 3.5rem;
+  /* Match other inputs */
 }
 
+/* Fix for the internal value display on iOS */
+input[type="date"]::-webkit-date-and-time-value {
+  margin: 0;
+  height: auto;
+  padding: 0;
+  text-align: left;
+}
+
+/* Ensure the picker indicator doesn't add extra offsets */
 input[type="date"]::-webkit-calendar-picker-indicator {
   background: transparent;
   bottom: 0;
@@ -31,4 +43,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   right: 0;
   top: 0;
   width: auto;
+}
+
+/* Fix for inner box on some iOS versions */
+input[type="date"]::-webkit-datetime-edit-fields-wrapper {
+  padding: 0;
 }

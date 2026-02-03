@@ -90,11 +90,12 @@ const LeadForm: React.FC<LeadFormProps> = ({
           </div>
           <div>
             <label className="block text-[10px] font-black text-gray-400 mb-2 uppercase tracking-widest">Rental Start Date</label>
-            <div className="relative">
+            <div className="relative overflow-hidden rounded-2xl">
               <input
                 required
                 type="date"
-                className="w-full px-6 py-5 rounded-2xl border-2 border-slate-100 focus:border-blue-500 outline-none transition font-bold text-slate-800 bg-white appearance-none"
+                className="w-full px-6 py-5 rounded-2xl border-2 border-slate-100 focus:border-blue-500 outline-none transition font-bold text-slate-900 bg-white"
+                style={{ WebkitAppearance: 'none', appearance: 'none' }}
               />
             </div>
           </div>
