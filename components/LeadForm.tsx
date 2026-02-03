@@ -7,10 +7,10 @@ interface LeadFormProps {
   buttonText?: string;
 }
 
-const LeadForm: React.FC<LeadFormProps> = ({ 
-  className = "", 
-  title = "Reserve Your Trailer", 
-  buttonText = "Check Availability" 
+const LeadForm: React.FC<LeadFormProps> = ({
+  className = "",
+  title = "Reserve Your Trailer",
+  buttonText = "Check Availability"
 }) => {
   const [submitted, setSubmitted] = useState(false);
 
@@ -27,7 +27,7 @@ const LeadForm: React.FC<LeadFormProps> = ({
         </div>
         <h3 className="text-3xl font-black text-gray-800 mb-4 uppercase tracking-tight">Request Received!</h3>
         <p className="text-gray-500 font-bold uppercase text-xs tracking-widest leading-relaxed">Our rental concierge will call you within 15 minutes to confirm availability.</p>
-        <button 
+        <button
           onClick={() => setSubmitted(false)}
           className="mt-12 text-blue-600 font-black uppercase tracking-widest text-[10px] hover:underline"
         >
@@ -44,33 +44,33 @@ const LeadForm: React.FC<LeadFormProps> = ({
         <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
         Instant Confirmation Available
       </p>
-      
+
       <form onSubmit={handleSubmit} className="space-y-6">
         <div>
           <label className="block text-[10px] font-black text-gray-400 mb-2 uppercase tracking-widest">Full Name*</label>
-          <input 
+          <input
             required
-            type="text" 
+            type="text"
             placeholder="John Doe"
             className="w-full px-6 py-5 rounded-2xl border-2 border-slate-100 focus:border-blue-500 outline-none transition font-bold"
           />
         </div>
-        
+
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div>
             <label className="block text-[10px] font-black text-gray-500 mb-2 uppercase tracking-widest">Phone Number*</label>
-            <input 
+            <input
               required
-              type="tel" 
+              type="tel"
               placeholder="(786) 366-9200"
               className="w-full px-6 py-5 rounded-2xl border-2 border-slate-100 focus:border-blue-500 outline-none transition font-bold"
             />
           </div>
           <div>
             <label className="block text-[10px] font-black text-gray-500 mb-2 uppercase tracking-widest">Email Address*</label>
-            <input 
+            <input
               required
-              type="email" 
+              type="email"
               placeholder="john@example.com"
               className="w-full px-6 py-5 rounded-2xl border-2 border-slate-100 focus:border-blue-500 outline-none transition font-bold"
             />
@@ -90,15 +90,17 @@ const LeadForm: React.FC<LeadFormProps> = ({
           </div>
           <div>
             <label className="block text-[10px] font-black text-gray-400 mb-2 uppercase tracking-widest">Rental Start Date</label>
-            <input 
-              required
-              type="date"
-              className="w-full px-6 py-5 rounded-2xl border-2 border-slate-100 focus:border-blue-500 outline-none transition font-bold text-slate-500"
-            />
+            <div className="relative">
+              <input
+                required
+                type="date"
+                className="w-full px-6 py-5 rounded-2xl border-2 border-slate-100 focus:border-blue-500 outline-none transition font-bold text-slate-800 bg-white appearance-none"
+              />
+            </div>
           </div>
         </div>
 
-        <button 
+        <button
           type="submit"
           className="w-full bg-[#1a365d] hover:bg-blue-600 text-white font-black py-6 px-8 rounded-2xl shadow-xl transform hover:scale-[1.02] active:scale-[0.98] transition duration-200 flex items-center justify-center gap-4 uppercase tracking-widest text-sm"
         >
@@ -106,11 +108,11 @@ const LeadForm: React.FC<LeadFormProps> = ({
           <i className="fa-solid fa-arrow-right text-xs"></i>
         </button>
       </form>
-      
+
       <div className="mt-12 flex items-center justify-center gap-8 border-t border-slate-50 pt-10">
         <div className="flex flex-col items-center">
           <div className="flex text-yellow-400 text-[10px] mb-2">
-            {[1,2,3,4,5].map(i => <i key={i} className="fa-solid fa-star"></i>)}
+            {[1, 2, 3, 4, 5].map(i => <i key={i} className="fa-solid fa-star"></i>)}
           </div>
           <span className="text-[10px] uppercase tracking-[0.2em] font-black text-slate-400">Google Verified</span>
         </div>

@@ -1,4 +1,3 @@
-
 @layer base {
   body {
     -webkit-font-smoothing: antialiased;
@@ -11,4 +10,25 @@
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 300ms;
+}
+
+/* iOS Date Picker Fix */
+input[type="date"] {
+  min-height: 2.5em;
+  /* Ensure enough height for the picker icon */
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  background: transparent;
+  bottom: 0;
+  color: transparent;
+  cursor: pointer;
+  height: auto;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: auto;
 }
