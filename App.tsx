@@ -41,7 +41,7 @@ const App: React.FC = () => {
               <i className="fa-solid fa-phone"></i>
               786-366-9200
             </a>
-            <a href="#trailers" className="whitespace-nowrap bg-blue-600 hover:bg-blue-700 text-white font-black px-6 py-2.5 rounded-full shadow-lg transition transform hover:scale-105">
+            <a href="#lead-form" className="whitespace-nowrap bg-blue-600 hover:bg-blue-700 text-white font-black px-6 py-2.5 rounded-full shadow-lg transition transform hover:scale-105">
               Reserve Now
             </a>
           </div>
@@ -81,7 +81,7 @@ const App: React.FC = () => {
                   <i className="fa-solid fa-phone"></i>
                   Call 786-366-9200
                 </a>
-                <a href="#trailers" className="w-full bg-white text-blue-900 font-black py-5 rounded-2xl flex items-center justify-center gap-3 text-lg uppercase shadow-lg">
+                <a href="#lead-form" className="w-full bg-white text-blue-900 font-black py-5 rounded-2xl flex items-center justify-center gap-3 text-lg uppercase shadow-lg">
                   <i className="fa-solid fa-calendar-check text-blue-600"></i>
                   Reserve Now
                 </a>
